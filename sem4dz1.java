@@ -13,29 +13,27 @@ public class sem4dz1 {
     String exit= "exit";
     Scanner console = new Scanner(System.in);
     String result;
-    while (true) {
+    while (true) 
+    {
         deque.addLast(console.next());
         result=deque.getLast();
             if (result.equals(exit))
             {
                 break;
             }
-        
             if (result.equals(print))
             {
                 deque.removeLast();
                 while(deque.peek()!=null)
-            {
-                System.out.println(deque.removeLast());
-            }
+                {
+                    System.out.println(deque.removeLast());
+                }
 
-            System.out.println("зашел в 1");
             }
             if (result.equals(revert))
             {
                 deque.removeLast();
                 deque.removeLast();
-                System.out.println("зашел в 2");
             }
     
         
